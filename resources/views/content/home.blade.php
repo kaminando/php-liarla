@@ -3,7 +3,7 @@
 @section('content')
   
   <!-- HEADER -->
-  @include('content.header') 
+  @include('content.header', array('headerClass'=>'')) 
   
 
   <!-- BANNER -->
