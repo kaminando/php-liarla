@@ -34,6 +34,13 @@
       @yield('content')
       
     </div>
+
+    <!-- MODAL REGISTRO -->
+    @include('content.singup-modal')
+
+    <!-- MODAL LOGIN -->
+    @include('content.login-modal')
+
     <!-- JAVASCRIPTS -->
     <script type="text/javascript" src="{!! asset('plugins/jquery.min.js') !!}"></script>
     <script type="text/javascript" src="{!! asset('plugins/jquery-ui/jquery-ui.js') !!}"></script>

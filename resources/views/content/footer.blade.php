@@ -10,7 +10,7 @@
               <br>
               "La ventaja de viajar seguro y descubrir lugares inimaginados"
               <br>
-              <a target="_blank" href="http://www.iamabdus.com/">Terminos y condiciones</a>
+              <a target="_blank" href="#">Terminos y condiciones</a>
             </p>
           </div>
         </div>

@@ -137,7 +137,7 @@
             </div>
           </div>
           <div class="col-sm-2 col-xs-12">
-            <a href="search.html" class="btn btn-block buttonCustomPrimary">Buscar</a>
+            <a href="search-results" class="btn btn-block buttonCustomPrimary">Buscar</a>
           </div>
         </div>
       </div>
@@ -233,7 +233,7 @@
                   $1,400
                 </h5>
                 <ul class="list-inline detailsBtn">
-                  <li><a href="single-package-right-sidebar.html" class="btn buttonTransparent">Detalles</a></li>
+                  <li><a href="hotel-detail" class="btn buttonTransparent">Detalles</a></li>
                 </ul>
               </div>
             </div>
@@ -261,7 +261,7 @@
                   $2,299
                 </h5>
                 <ul class="list-inline detailsBtn">
-                  <li><a href="#" class="btn buttonTransparent">Detalles</a></li>
+                  <li><a href="hotel-detail" class="btn buttonTransparent">Detalles</a></li>
                 </ul>
               </div>
             </div>
@@ -291,7 +291,7 @@
                   $1,999
                 </h5>
                 <ul class="list-inline detailsBtn">
-                  <li><a href="single-package-left-sidebar.html" class="btn buttonTransparent">Detalles</a></li>
+                  <li><a href="hotel-detail" class="btn buttonTransparent">Detalles</a></li>
                 </ul>
               </div>
             </div>

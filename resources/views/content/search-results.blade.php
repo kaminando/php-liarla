@@ -95,7 +95,7 @@
                 </a>
                 <div class="media-body">
                   <div class="bodyLeft">
-                    <h4 class="media-heading"><a href="hotel-detail.html">Zipolite Oaxaca</a></h4>
+                    <h4 class="media-heading"><a href="hotel-detail">Zipolite Oaxaca</a></h4>
                     <div class="countryRating">
                       <span>México</span>
                       <ul class="list-inline rating">
@@ -114,7 +114,7 @@
                     <div class="bookingDetails">
                       <h2>$3,899</h2>
                       <p>Por Persona</p>
-                      <a href="hotel-detail.html" class="btn buttonTransparent clearfix">Detalles</a>
+                      <a href="hotel-detail" class="btn buttonTransparent clearfix">Detalles</a>
                       <a data-toggle="modal" data-target="#inquiryModal" href="#" class="btn buttonTransparent">Más Inf.</a>
                     </div>
                   </div>
@@ -126,7 +126,7 @@
                 </a>
                 <div class="media-body">
                   <div class="bodyLeft">
-                    <h4 class="media-heading"><a href="hotel-detail.html">Crucero canarias</a></h4>
+                    <h4 class="media-heading"><a href="hotel-detail">Crucero canarias</a></h4>
                     <div class="countryRating">
                       <span>USA</span>
                       <ul class="list-inline rating">
@@ -146,7 +146,7 @@
                     <div class="bookingDetails">
                       <h2>$5,100</h2>
                       <p>Por Persona</p>
-                      <a href="hotel-detail.html" class="btn buttonTransparent clearfix">Detalles</a>
+                      <a href="hotel-detail" class="btn buttonTransparent clearfix">Detalles</a>
                       <a data-toggle="modal" data-target="#inquiryModal" href="#" class="btn buttonTransparent">Más Inf.</a>
                     </div>
                   </div>
@@ -158,7 +158,7 @@
                 </a>
                 <div class="media-body">
                   <div class="bodyLeft">
-                    <h4 class="media-heading"><a href="hotel-detail.html">Miami Beach</a></h4>
+                    <h4 class="media-heading"><a href="hotel-detail">Miami Beach</a></h4>
                     <div class="countryRating">
                       <span>USA</span>
                       <ul class="list-inline rating">
@@ -179,7 +179,7 @@
                     <div class="bookingDetails">
                       <h2>$14,599</h2>
                       <p>Por Persona</p>
-                      <a href="hotel-detail.html" class="btn buttonTransparent clearfix">Detalles</a>
+                      <a href="hotel-detail" class="btn buttonTransparent clearfix">Detalles</a>
                       <a class="btn buttonTransparent" href='booking-1.html'>Book</a>
                     </div>
                   </div>
@@ -191,7 +191,7 @@
                 </a>
                 <div class="media-body">
                   <div class="bodyLeft">
-                    <h4 class="media-heading"><a href="hotel-detail.html">Punta Escondida</a></h4>
+                    <h4 class="media-heading"><a href="hotel-detail">Punta Escondida</a></h4>
                     <div class="countryRating">
                       <span>Colombia</span>
                       <ul class="list-inline rating">
@@ -211,7 +211,7 @@
                     <div class="bookingDetails">
                       <h2>$2,500</h2>
                       <p>Por Persona</p>
-                      <a href="hotel-detail.html" class="btn buttonTransparent clearfix">Detalles</a>
+                      <a href="hotel-detail" class="btn buttonTransparent clearfix">Detalles</a>
                       <a class="btn buttonTransparent" href='booking-1.html'>Book</a>
                     </div>
                   </div>
@@ -223,7 +223,7 @@
                 </a>
                 <div class="media-body">
                   <div class="bodyLeft">
-                    <h4 class="media-heading"><a href="hotel-detail.html">Hotel Arcos Acapulco</a></h4>
+                    <h4 class="media-heading"><a href="hotel-detail">Hotel Arcos Acapulco</a></h4>
                     <div class="countryRating">
                       <span>México</span>
                       <ul class="list-inline rating">
@@ -242,7 +242,7 @@
                     <div class="bookingDetails">
                       <h2>$3,780</h2>
                       <p>Por Persona</p>
-                      <a href="hotel-detail.html" class="btn buttonTransparent clearfix">Detalles</a>
+                      <a href="hotel-detail" class="btn buttonTransparent clearfix">Detalles</a>
                       <a data-toggle="modal" data-target="#inquiryModal" href="#" class="btn buttonTransparent">book</a>
                     </div>
                   </div>
@@ -254,7 +254,7 @@
                 </a>
                 <div class="media-body">
                   <div class="bodyLeft">
-                    <h4 class="media-heading"><a href="hotel-detail.html">Amsterdam</a></h4>
+                    <h4 class="media-heading"><a href="hotel-detail">Amsterdam</a></h4>
                     <div class="countryRating">
                       <span>Euroopa</span>
                       <ul class="list-inline rating">
@@ -272,7 +272,7 @@
                     <div class="bookingDetails">
                       <h2>$22,999</h2>
                       <p>Por Persona</p>
-                      <a href="hotel-detail.html" class="btn buttonTransparent clearfix">Detalles</a>
+                      <a href="hotel-detail" class="btn buttonTransparent clearfix">Detalles</a>
                       <a data-toggle="modal" data-target="#inquiryModal" href="#" class="btn buttonTransparent">book</a>
                     </div>
                   </div>
@@ -284,7 +284,7 @@
                 </a>
                 <div class="media-body">
                   <div class="bodyLeft">
-                    <h4 class="media-heading"><a href="hotel-detail.html">Hotel Caribean</a></h4>
+                    <h4 class="media-heading"><a href="hotel-detail">Hotel Caribean</a></h4>
                     <div class="countryRating">
                       <span>USA</span>
                       <ul class="list-inline rating">
@@ -304,7 +304,7 @@
                     <div class="bookingDetails">
                       <h2>$6,000</h2>
                       <p>Por Persona</p>
-                      <a href="hotel-detail.html" class="btn buttonTransparent clearfix">Detalles</a>
+                      <a href="hotel-detail" class="btn buttonTransparent clearfix">Detalles</a>
                       <a data-toggle="modal" data-target="#inquiryModal" href="#" class="btn buttonTransparent">book</a>
                     </div>
                   </div>
@@ -316,7 +316,7 @@
                 </a>
                 <div class="media-body">
                   <div class="bodyLeft">
-                    <h4 class="media-heading"><a href="hotel-detail.html">Hotel del Valle Taxco</a></h4>
+                    <h4 class="media-heading"><a href="hotel-detail">Hotel del Valle Taxco</a></h4>
                     <div class="countryRating">
                       <span>México</span>
                       <ul class="list-inline rating">
@@ -337,7 +337,7 @@
                     <div class="bookingDetails">
                       <h2>$3,860</h2>
                       <p>Por Persona</p>
-                      <a href="hotel-detail.html" class="btn buttonTransparent clearfix">Detalles</a>
+                      <a href="hotel-detail" class="btn buttonTransparent clearfix">Detalles</a>
                       <a data-toggle="modal" data-target="#inquiryModal" href="#" class="btn buttonTransparent">book</a>
                     </div>
                   </div>
@@ -349,7 +349,7 @@
                 </a>
                 <div class="media-body">
                   <div class="bodyLeft">
-                    <h4 class="media-heading"><a href="hotel-detail.html">Notredame</a></h4>
+                    <h4 class="media-heading"><a href="hotel-detail">Notredame</a></h4>
                     <div class="countryRating">
                       <span>Europa</span>
                       <ul class="list-inline rating">
@@ -369,7 +369,7 @@
                     <div class="bookingDetails">
                       <h2>$9,300</h2>
                       <p>Por Persona</p>
-                      <a href="hotel-detail.html" class="btn buttonTransparent clearfix">Detalles</a>
+                      <a href="hotel-detail" class="btn buttonTransparent clearfix">Detalles</a>
                       <a data-toggle="modal" data-target="#inquiryModal" href="#" class="btn buttonTransparent">book</a>
                     </div>
                   </div>
