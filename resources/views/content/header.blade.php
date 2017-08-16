@@ -47,29 +47,36 @@
               <li><a href="#">Ofertas</a></li>
             </ul>
           </li>
-          <li class="dropdown singleDrop ">
-            <a href="" data-toggle="modal" data-target="#signup"><i class="fa fa-user" aria-hidden="true"></i> CREA TU CUENTA</a>
-          </li>
-          <li class="dropdown singleDrop ">
-            <a href="" data-toggle="modal" data-target="#login"><i class="fa fa-check" aria-hidden="true"></i> INICIA SESIÓN</a>
-          </li>
+
+          @if (Auth::guest())
+            <li class="dropdown singleDrop ">
+              <a href="" data-toggle="modal" data-target="#signup"><i class="fa fa-user" aria-hidden="true"></i> CREA TU CUENTA</a>
+            </li>
+            <li class="dropdown singleDrop ">
+              <a href="" data-toggle="modal" data-target="#login"><i class="fa fa-check" aria-hidden="true"></i> INICIA SESIÓN</a>
+            </li>
+          @endif
           <li class="dropdown singleDrop ">
             <a href="about-us">QUIENES SOMOS</a>
           </li>
           <li class="dropdown singleDrop ">
             <a href="contact" ><i class="fa fa-phone" aria-hidden="true"></i> CONTACTO</a>
           </li>
-          <li class="dropdown singleDrop profile-thumb-nav hide">
-            <a href="#" class="dropdown-toggle " data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              <img src="images/profile/thumb/profile.jpg" alt="">
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </a>
+
+          @if (Auth::check())
+            <li class="dropdown singleDrop ">
+            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}&nbsp;&nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></a>
             <ul class="dropdown-menu dropdown-menu-right">
-              <li class=""><a href="dashboard">Dashboard</a></li>
-              <li class=""><a href="profile">Perfil</a></li>
+              <li><a href="dashboard">Dashboard</a></li>
+              <li><a href="profile">Perfil</a></li>
               <li><a href="settings">Configuración</a></li>
+              <li><a href="{{ route('logout') }} " onclick="event.preventDefault(); document.getElementById('logout-form').submit();">SALIR</a></li>
+              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                {{ csrf_field() }}
+            </form>
             </ul>
           </li>
+          @endif
         </ul>
       </div>
     </div>

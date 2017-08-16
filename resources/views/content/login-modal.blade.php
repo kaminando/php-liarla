@@ -6,25 +6,36 @@
         <h4 class="modal-title" id="myModalLabel">Inicia Sesión</h4>
       </div>
       <div class="modal-body">
-        <form method="post" action="">
-          <div class="form-group">
-            <input type="email" class="form-control bg-ash" id="exampleInputPassword1" placeholder="Email">
+        <form method="POST" action="{{ route('login') }}">
+          {{ csrf_field() }}
+          <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+            <input id="email" type="email" class="form-control bg-ash" name="email" value="{{ old('email') }}" placeholder="Email" required autofocus>
+            @if ($errors->has('email'))
+              <span class="help-block">
+                <strong>{{ $errors->first('email') }}</strong>
+              </span>
+            @endif
           </div>
-          <div class="form-group">
-            <input type="password" class="form-control bg-ash" id="exampleInputPassword1" placeholder="Contraseña">
+          <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+            <input id="password" type="password" class="form-control bg-ash" name="password" placeholder="Contraseña" required>
+            @if ($errors->has('password'))
+              <span class="help-block">
+                <strong>{{ $errors->first('password') }}</strong>
+              </span>
+            @endif
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox"> Recordarme
+              <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Recordarme
             </label>
-            <a class="forgotPass clerfix" href="">¿Olvidaste tu contraseña?</a>
+            <a class="forgotPass clerfix hide" href="">¿Olvidaste tu contraseña?</a>
           </div>
           <button type="submit" class="btn btn-default">Entrar</button>
         </form>
-        <div class="or">
+        <div class="or hide">
           or
         </div>
-        <a class="btn btn-default btnSocial"  href="#">Inicia con Facebook</a>
+        <a class="btn btn-default btnSocial hide"  href="#">Inicia con Facebook</a>
       </div>
     </div>
   </div>

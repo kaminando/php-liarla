@@ -47,3 +47,7 @@ Route::get('settings', function () {
 Route::get('shared-stories', function () {
     return view('content/shared-stories');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
