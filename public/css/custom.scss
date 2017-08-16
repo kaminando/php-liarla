@@ -300,3 +300,16 @@ h3.section-header {
     }
   }
 }
+
+a.logged-user {
+  span {
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 3px;
+    text-transform: none;
+  }
+}
+
+li.logout {
+  border-top: 1px solid #e6e6e6;
+}

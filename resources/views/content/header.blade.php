@@ -65,12 +65,17 @@
 
           @if (Auth::check())
             <li class="dropdown singleDrop ">
-            <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }}&nbsp;&nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            <a href="javascript:void(0)" class="dropdown-toggle logged-user" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <span>{{ Auth::user()->name }}</span>&nbsp;&nbsp;
+              <i class="fa fa-angle-down" aria-hidden="true"></i></a>
             <ul class="dropdown-menu dropdown-menu-right">
               <li><a href="dashboard">Dashboard</a></li>
               <li><a href="profile">Perfil</a></li>
               <li><a href="settings">Configuración</a></li>
-              <li><a href="{{ route('logout') }} " onclick="event.preventDefault(); document.getElementById('logout-form').submit();">SALIR</a></li>
+              <li class="logout"><a href="{{ route('logout') }} " onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                Salir&nbsp;&nbsp;<i class="fa fa-sign-out" aria-hidden="true"></i> 
+              </a></li>
               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 {{ csrf_field() }}
             </form>

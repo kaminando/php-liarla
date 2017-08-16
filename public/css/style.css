@@ -4042,7 +4042,7 @@ header {
       border-left: 1px solid #eaeaea; }
   .singleHotelSidebar .datepickerWrap .count-input input {
     -moz-appearance: none;
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    background: transparent none repeat scroll 0 0;
     border: 1px solid #eaeaea;
     border-radius: 3px;
     height: 48px;
@@ -6555,5 +6555,14 @@ h3.section-header {
     border-radius: 50%; }
   .profile-thumb-nav .dropdown-toggle:after {
     background-color: none !important; }
+
+a.logged-user span {
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 3px;
+  text-transform: none; }
+
+li.logout {
+  border-top: 1px solid #e6e6e6; }
 
 /*# sourceMappingURL=style.css.map */

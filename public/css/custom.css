@@ -229,4 +229,13 @@ h3.section-header {
   .profile-thumb-nav .dropdown-toggle:after {
     background-color: none !important; }
 
+a.logged-user span {
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 3px;
+  text-transform: none; }
+
+li.logout {
+  border-top: 1px solid #e6e6e6; }
+
 /*# sourceMappingURL=custom.css.map */
