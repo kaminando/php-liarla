@@ -9,18 +9,20 @@
         <form method="POST" action="{{ route('register') }}">
           {{ csrf_field() }}
           <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-            <input id="name" type="text" class="form-control bg-ash" name="name" value="{{ old('name') }}" placeholder="Nombre de usuario" required autofocus>
+            <input id="name" type="text" class="form-control bg-ash" name="name" value="{{ old('name') }}" placeholder="Nombre(s)" required autofocus>
             @if ($errors->has('name'))
               <span class="help-block">
                 <strong>{{ $errors->first('name') }}</strong>
               </span>
             @endif
           </div>
-          <div class="form-group">
-            <input type="text" class="form-control bg-ash" id="exampleInputEmail1" placeholder="Nombre(s)">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control bg-ash" id="exampleInputEmail1" placeholder="Apellidos">
+          <div class="form-group{{ $errors->has('last_name') ? ' has-error' : '' }}">
+            <input id="last_name" type="text" class="form-control bg-ash" name="last_name" value="{{ old('last_name') }}" placeholder="Apellidos" required autofocus>
+            @if ($errors->has('name'))
+              <span class="help-block">
+                <strong>{{ $errors->first('last_name') }}</strong>
+              </span>
+            @endif
           </div>
           <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
             <input id="email" type="email" class="form-control bg-ash" name="email" value="{{ old('email') }}" placeholder="Email" required>
@@ -43,7 +45,7 @@
           </div>
           <div class="checkbox">
             <label>
-              <input type="checkbox"> Acepto <a href="#">Términos y condiciones</a>
+              Al registrarme en la plataforma manifiesto que estoy de acuerdo con los <a href="#">Términos y condiciones</a>
             </label>
           </div>
           <button type="submit" class="btn btn-default">REGISTRARSE</button>

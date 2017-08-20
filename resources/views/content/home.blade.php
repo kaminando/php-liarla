@@ -93,36 +93,20 @@
     <section class="darkSection desk-search-bar no-xs">
       <div class="container">
         <div class="row gridResize">
-          <div class="col-sm-3 col-xs-12">
+          <div class="col-xs-3 col-xs-12 desk-search-legend">
             <div class="sectionTitleDouble">
               <p>Busca</p>
               <h2>tus <span>destinos</span></h2>
             </div>
           </div>
-          <div class="col-sm-7 col-xs-12">
+          <div class="col-xs-9 col-xs-offset-3">
             <div class="row">
-              <div class="col-sm-3 col-xs-12">
+              <div class="col-xs-8">
                 <div class="input-group date text-search" >
                   <input type="text" class="form-control currency" placeholder="Presupuesto">
                 </div>
               </div>
-              <div class="col-sm-3 col-xs-12">
-                <div class="input-group date ed-datepicker" data-provide="datepicker">
-                  <input type="text" class="form-control" placeholder="MM/DD/YYYY">
-                  <div class="input-group-addon">
-                      <span class="fa fa-calendar"></span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-3 col-xs-12">
-                <div class="input-group date ed-datepicker" data-provide="datepicker">
-                  <input type="text" class="form-control" placeholder="MM/DD/YYYY">
-                  <div class="input-group-addon">
-                      <span class="fa fa-calendar"></span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-3 col-xs-12">
+              <div class="col-xs-4">
                 <div class="searchTour">
                   <select name="guiest_id2" id="guiest_id2" class="select-drop">
                     <option selected disabled value="-1">Personas</option>
@@ -136,8 +120,34 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-2 col-xs-12">
-            <a href="search-results" class="btn btn-block buttonCustomPrimary">Buscar</a>
+        </div>
+        <div class="row gridResize">
+          <br><br>
+          <div class="col-xs-9 col-xs-offset-3">
+            <div class="row">
+              <div class="col-xs-4">
+                <div class="input-group date ed-datepicker" data-provide="datepicker">
+                  <label>Salida:</label>
+                  <input type="text" class="form-control date-desk-search" placeholder="MM/DD/YYYY">
+                  <div class="input-group-addon">
+                      <span class="fa fa-calendar"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xs-4">
+                <div class="input-group date ed-datepicker" data-provide="datepicker">
+                  <label>Llegada:</label>
+                  <input type="text" class="form-control date-desk-search" placeholder="MM/DD/YYYY">
+                  <div class="input-group-addon">
+                      <span class="fa fa-calendar"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4">
+                <label>&nbsp;</label>
+                <a href="search-results" class="btn btn-block buttonCustomPrimary">Buscar</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -202,8 +212,110 @@
     </div>
   </section>
 
-  <!-- PAGE CONTENT -->
   <section class="mainContentSection packagesSection">
+    <div class="container">
+      <div class="jumbotron home-jumbotron">
+        <h3 class="section-header center">Cómo funciona</h3>
+        <p class="section-header center">Descubre como podemos ayudarte a encontrar lo que no sabes que deseas!.</p>
+        <br>
+        <div class="row">
+          <div class="col-md-4 inf">
+            <div>
+              <br>
+              <h4>Ingresa tu presupuesto</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet diam nec mi dictum, gravida venenatis eros consequat. Maecenas est enim, ultrices et lacus a, semper dictum orci. Morbi malesuada est eu nisi varius, sit amet pulvinar leo eleifend.</p>
+            </div>
+            
+          </div>
+          <div class="col-md-4 inf">
+            <div>
+              <br>
+              <h4>Explora destinos</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet diam nec mi dictum, gravida venenatis eros consequat. Maecenas est enim, ultrices et lacus a, semper dictum orci. Morbi malesuada est eu nisi varius, sit amet pulvinar leo eleifend.</p>
+            </div>
+          </div>
+          <div class="col-md-4 inf">
+            <div>
+              <br>
+              <h4>Encuentra los mejores vuelos</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet diam nec mi dictum, gravida venenatis eros consequat. Maecenas est enim, ultrices et lacus a, semper dictum orci. Morbi malesuada est eu nisi varius, sit amet pulvinar leo eleifend.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="packagesSection liarla-interested">
+    <div class="container">
+      <div class="row">
+        <h3 class="section-header center">¿En qué estás interesado?</h3>
+        <p class="section-header center">Explora algunos de ls diferentes formatos de viajes seleccionados para ti.</p>
+        <br><br>
+        <div class="col-sm-3 interested-block">
+          <a href="#">
+            <div class="wrapper">
+              <div class="content beach"></div>
+              <div class="dark-layer"></div>
+              <div class="inf-layer">
+                <div class="draw">
+                  <img src="images/interested/thumbs/beach-thumb.svg">
+                  <p>Playa</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-3 interested-block">
+          <a href="#">
+            <div class="wrapper">
+              <div class="content friends"></div>
+              <div class="dark-layer"></div>
+              <div class="inf-layer">
+                <div class="draw">
+                  <img src="images/interested/thumbs/friends-thumb.svg">
+                  <p>Amigos</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-3 interested-block">
+          <a href="#">
+            <div class="wrapper">
+              <div class="content tropical"></div>
+              <div class="dark-layer"></div>
+              <div class="inf-layer">
+                <div class="draw">
+                  <img src="images/interested/thumbs/tropical-thumb.svg">
+                  <p>Tropical</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-sm-3 interested-block">
+          <a href="#">
+            <div class="wrapper">
+              <div class="content romantic"></div>
+              <div class="dark-layer"></div>
+              <div class="inf-layer">
+                <div class="draw">
+                  <img src="images/interested/thumbs/romantic-thumb.svg">
+                  <p>Romántico</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <br><br>
+  </section>
+
+  <!-- PAGE CONTENT -->
+  <section class="packagesSection">
+    <br><br><br>
     <div class="container">
       <div class="row">
         <h3 class="section-header center">Ve hasta donde han ido otros...</h3>
@@ -299,108 +411,6 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="packagesSection">
-    <div class="container">
-      <div class="jumbotron home-jumbotron">
-        <h3 class="section-header center">Cómo funciona</h3>
-        <p class="section-header center">Descubre como podemos ayudarte a encontrar lo que no sabes que deseas!.</p>
-        <br>
-        <div class="row">
-          <div class="col-md-4 inf">
-            <div>
-              <br>
-              <h4>Ingresa tu presupuesto</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet diam nec mi dictum, gravida venenatis eros consequat. Maecenas est enim, ultrices et lacus a, semper dictum orci. Morbi malesuada est eu nisi varius, sit amet pulvinar leo eleifend.</p>
-            </div>
-            
-          </div>
-          <div class="col-md-4 inf">
-            <div>
-              <br>
-              <h4>Explora destinos</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet diam nec mi dictum, gravida venenatis eros consequat. Maecenas est enim, ultrices et lacus a, semper dictum orci. Morbi malesuada est eu nisi varius, sit amet pulvinar leo eleifend.</p>
-            </div>
-          </div>
-          <div class="col-md-4 inf">
-            <div>
-              <br>
-              <h4>Encuentra los mejores vuelos</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet diam nec mi dictum, gravida venenatis eros consequat. Maecenas est enim, ultrices et lacus a, semper dictum orci. Morbi malesuada est eu nisi varius, sit amet pulvinar leo eleifend.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="packagesSection liarla-interested">
-    <br><br>
-    <div class="container">
-      <div class="row">
-        <h3 class="section-header center">¿En qué estás interesado?</h3>
-        <p class="section-header center">Explora algunos de ls diferentes formatos de viajes seleccionados para ti.</p>
-        <br><br>
-        <div class="col-sm-3 interested-block">
-          <a href="#">
-            <div class="wrapper">
-              <div class="content beach"></div>
-              <div class="dark-layer"></div>
-              <div class="inf-layer">
-                <div class="draw">
-                  <img src="images/interested/thumbs/beach-thumb.svg">
-                  <p>Playa</p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-3 interested-block">
-          <a href="#">
-            <div class="wrapper">
-              <div class="content friends"></div>
-              <div class="dark-layer"></div>
-              <div class="inf-layer">
-                <div class="draw">
-                  <img src="images/interested/thumbs/friends-thumb.svg">
-                  <p>Amigos</p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-3 interested-block">
-          <a href="#">
-            <div class="wrapper">
-              <div class="content tropical"></div>
-              <div class="dark-layer"></div>
-              <div class="inf-layer">
-                <div class="draw">
-                  <img src="images/interested/thumbs/tropical-thumb.svg">
-                  <p>Tropical</p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-sm-3 interested-block">
-          <a href="#">
-            <div class="wrapper">
-              <div class="content romantic"></div>
-              <div class="dark-layer"></div>
-              <div class="inf-layer">
-                <div class="draw">
-                  <img src="images/interested/thumbs/romantic-thumb.svg">
-                  <p>Romántico</p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <br><br>
   </section>
 
   <section class="packagesSection">

@@ -39,18 +39,18 @@
               <a href="setting.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
             </div>
             <div class="profileTitle">
-              <h2>Carlos Alberto Lira</h2>
-              <span>Agente de Publicidad</span>
+              <h2>{{ Auth::user()->name }} {{ Auth::user()->last_name }}</h2>
+              <span>{{ Auth::user()->profession }}</span>
             </div>
-            <p>Soy un apasionado de la innovación. Me encanta aprender cosas nuevas y acompañar a otros en su aprendizaje. Creo firmemente en el potencial de las personas para hacer cosas asombrosas, crear, ilusionar y disfrutar con los proyectos que emprenden.</p>
+            <p>
+              {{ Auth::user()->self_description }}
+            </p>
             <div class="profileInfo">
-              <p><strong>Nombre(s): </strong> Carlos Alberto</p>
-              <p><strong>Apellidos: </strong> Lira</p>
-              <p><strong>Teléfono: </strong>(044) 5589899898</p>
-              <p><strong>Dirección: </strong>Av. Presidente Masaryk #286 Col. Polanco</p>
-              <p><strong>Código Postal: </strong>17644</p>
-              <p><strong>País: </strong> México</p>
-              <p><strong>Email: </strong> user@liarla.com</p>
+              <p><strong>Teléfono: </strong>{{ Auth::user()->telephone }}</p>
+              <p><strong>Dirección: </strong>{{ Auth::user()->address }}</p>
+              <p><strong>Código Postal: </strong>{{ Auth::user()->zip_code }}</p>
+              <p><strong>País: </strong>{{ Auth::user()->country }}</p>
+              <p><strong>Email: </strong>{{ Auth::user()->email }}</p>
             </div>
           </div>
         </div>
