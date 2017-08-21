@@ -104,7 +104,7 @@ h3.section-header {
     position: absolute;
     z-index: 99;
     width: auto;
-    top: 70%;
+    bottom: 15px;
     margin-left: 50%;
     transform: translateX(-50%);
     -webkit-border-radius: 8px;
@@ -229,8 +229,8 @@ h3.section-header {
           height: 100%;
           background-size: cover;
           background-position-x: center;
-          -webkit-transition: 0.3s;
-          transition: 0.3s;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
         }
         .beach {
           background-image: url('../images/interested/beach.jpg');
@@ -335,4 +335,40 @@ a.logged-user {
 
 li.logout {
   border-top: 1px solid #e6e6e6;
+}
+
+.presupuesto-mbl {
+  background-color: rgba(16, 16, 16, 0.28);
+  padding-bottom: 5px;
+  position: absolute;
+  top: -300px;
+  opacity: 0;
+  z-index: 99;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+  label {
+    color: #ffffff;
+  }
+}
+
+.presupuesto-desk {
+   opacity: 0;
+   position: relative;
+   left: -200px;
+}
+
+.search-mbl-fx {
+  top: -220px;
+  opacity: 1;
+}
+
+.search-desk-fx {
+  opacity: 1;
+  left: 0px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-transition-delay: 0.7s;
+  transition-delay: 0.7s;
 }

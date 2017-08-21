@@ -102,7 +102,7 @@
           <div class="col-xs-9 col-xs-offset-3">
             <div class="row">
               <div class="col-xs-8">
-                <div class="input-group date text-search" >
+                <div class="input-group date text-search presupuesto-desk" >
                   <input type="text" class="form-control currency" placeholder="Presupuesto">
                 </div>
               </div>
@@ -166,13 +166,10 @@
         </div>
         <div class="col-sm-7 col-xs-12">
           <div class="row">
-            <div class="col-sm-3 col-xs-12">
-              <div class="searchTour">
-                <select name="guiest_id3" id="guiest_id3" class="select-drop">
-                  <option selected disabled value="-1">Presupuesto</option>
-                  <option value="1">$1400 - $2000</option>
-                  <option value="2">$1600 - $2000</option>
-                </select>
+            <div class="col-sm-3 col-xs-12 presupuesto-mbl">
+              <div class="input-group date text-search" >
+                <label>Presupuesto</label>
+                <input type="text" class="form-control currency" placeholder="€">
               </div>
             </div>
             <div class="col-sm-3 col-xs-12">

@@ -1,7 +1,10 @@
 jQuery(document).ready(function(){
    'use strict';
 
- $('#quote-carousel').carousel({
+  $('.presupuesto-mbl').addClass('search-mbl-fx');
+  $('.presupuesto-desk').addClass('search-desk-fx');
+
+  $('#quote-carousel').carousel({
     pause: true,
     interval: 5000,
   });

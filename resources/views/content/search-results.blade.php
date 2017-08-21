@@ -78,7 +78,7 @@
                 <div class="row">
                   <div class="col-xs-12">
                     <div class="input-group date text-search dark-place-holder filterDate">
-                      <input type="text" class="form-control presupuesto-bigger currency" placeholder="$">
+                      <input type="text" class="form-control search-results-left presupuesto-bigger currency" placeholder="€">
                     </div>
                   </div>
                 </div>

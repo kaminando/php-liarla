@@ -457,6 +457,7 @@
 	padding: $base-xs*2 $base-xs*6 $base-xs*6 0;
 	box-shadow: none !important;
 }
+
 .text-search.filterDate .form-control{
 	color: lighten(desaturate(adjust-hue($primary-color, -28.5333), 100.0000), 2.9412);
 }
@@ -484,6 +485,41 @@
 	color: $white-color;
 	font-size: 40px;
 }
+
+
+
+.presupuesto-mbl .form-control{
+	font-size: 40px;
+}
+
+.presupuesto-mbl .form-control::-webkit-input-placeholder{
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: $white-color;
+	font-size: 40px;
+}
+.presupuesto-mbl .form-control::-moz-placeholder{
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: $white-color;
+	font-size: 40px;
+}
+.presupuesto-mbl .form-control:-ms-input-placeholder{
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: $white-color;
+	font-size: 40px;
+}
+.presupuesto-mbl .form-control:-moz-placeholder {
+	font-weight: 500;
+	letter-spacing: 2px;
+	color: $white-color;
+	font-size: 40px;
+}
+
+
+
+
 .text-search.filterDate .form-control::-webkit-input-placeholder{
 	font-weight: 400;
 	color: $white-color;
@@ -505,6 +541,34 @@
 	background: transparent;
 	border: none;
 	padding-right: 0;
+}
+////
+.text-search.filterDate .search-results-left{
+	color: lighten(desaturate(adjust-hue($primary-color, -28.5333), 100.0000), 2.9412);
+}
+.text-search .search-results-left::-webkit-input-placeholder{
+	font-weight: 600 !important;
+	letter-spacing: 2px;
+	color: $white-color;
+	font-size: 22px;
+}
+.text-search .search-results-left::-moz-placeholder{
+	font-weight: 600 !important;
+	letter-spacing: 2px;
+	color: $white-color;
+	font-size: 22px;
+}
+.text-search .search-results-left:-ms-input-placeholder{
+	font-weight: 600 !important;
+	letter-spacing: 2px;
+	color: $white-color;
+	font-size: 22px;
+}
+.text-search .search-results-left:-moz-placeholder {
+	font-weight: 600 !important;
+	letter-spacing: 2px;
+	color: $white-color;
+	font-size: 22px;
 }
 
 .datepicker-dropdown{

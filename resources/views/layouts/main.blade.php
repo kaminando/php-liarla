@@ -21,7 +21,7 @@
     <!-- CUSTOM CSS -->
     <link href="{!! asset('css/style.css') !!}"    media="all" rel="stylesheet" type="text/css" />
     <link href="{!! asset('css/custom.css') !!}"   media="all" rel="stylesheet" type="text/css" />
-    <link href="{!! asset('css/default.css') !!}"  media="all" rel="stylesheet" type="text/css" />
+    <link href="{!! asset('css/blue.css') !!}"  media="all" rel="stylesheet" type="text/css" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
