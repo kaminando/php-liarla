@@ -53,7 +53,7 @@ class LoginController extends Controller
     }
 
     /**
-     * Obtain the user information from GitHub.
+     * Obtain the user information from Facebook.
      *
      * @return Response
      */
@@ -78,14 +78,12 @@ class LoginController extends Controller
             $user->name = $userSocial->name;
 
             $user->email = $userSocial->email;
-            
+
+            $user->social_user = true;
+
             $user->photo = $userSocial->avatar;
 
             $user->password = bcrypt('socialite-pass');
-
-
-            $user->last_name = '';
-
 
             $user->save();
 
