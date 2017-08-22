@@ -1,6 +1,9 @@
 jQuery(document).ready(function(){
    'use strict';
 
+  if (window.location.hash == "#_=_")
+  window.location.hash = "";
+
   $('.presupuesto-mbl').addClass('search-mbl-fx');
   $('.presupuesto-desk').addClass('search-desk-fx');
 

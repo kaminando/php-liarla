@@ -61,22 +61,41 @@ class LoginController extends Controller
     {
         $userSocial = Socialite::driver('facebook')->user();
 
-        $user = new User;
+        $findUser = User::where('email', $userSocial->email)->first();
 
-        $user->name = $userSocial->name;
+        if( $findUser ) {
 
-        $user->email = $userSocial->email;
+            
+            Auth::login( $findUser );
 
-        $user->password = bcrypt('socialite-pass');
+            return redirect('/');
+
+        }
+        else {
+
+            $user = new User;
+
+            $user->name = $userSocial->name;
+
+            $user->email = $userSocial->email;
+            
+            $user->photo = $userSocial->avatar;
+
+            $user->password = bcrypt('socialite-pass');
 
 
-        $user->last_name = '';
+            $user->last_name = '';
 
 
-        $user->save();
+            $user->save();
 
-        Auth::login( $userSocial->email );
+            Auth::login( $user );
 
-        return 'done!';
+            
+            return redirect('');
+
+        }
+
+        
     }
 }

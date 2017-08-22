@@ -32,10 +32,10 @@
           </div>
           <button type="submit" class="btn btn-default">Entrar</button>
         </form>
-        <div class="or hide">
-          or
+        <div class="or">
+          o
         </div>
-        <a class="btn btn-default btnSocial hide"  href="#">Inicia con Facebook</a>
+        <a class="btn btn-default btnSocial"  href="login/facebook">Inicia con Facebook</a>
       </div>
     </div>
   </div>

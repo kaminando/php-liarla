@@ -50,10 +50,10 @@
           </div>
           <button type="submit" class="btn btn-default">REGISTRARSE</button>
         </form>
-        <div class="or hide">
+        <div class="or">
           o
         </div>
-        <a class="btn btn-default btnSocial hide"  href="#">Inicia con Facebook</a>
+        <a class="btn btn-default btnSocial"  href="login/facebook">Regístrate con Facebook</a>
       </div>
     </div>
   </div>
