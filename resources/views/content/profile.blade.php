@@ -30,7 +30,11 @@
       <div class="row">
         <div class="col-xs-12 col-sm-4">
           <div class="profileImg">
-            <img class="img-responsive" src="images/profile/profile.jpg" alt="">
+            @if (Auth::user()->social_user)
+              <img class="img-responsive" src="<?= str_replace('type=normal', 'type=large', Auth::user()->photo) ?>" alt="Foto de perfil.">
+            @else
+              <img class="img-responsive" src="images/profile/profile.jpg" alt="">
+            @endif
           </div>
         </div>
         <div class="col-xs-12 col-sm-8">
