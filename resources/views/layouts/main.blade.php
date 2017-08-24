@@ -22,6 +22,9 @@
     <link href="{!! asset('css/style.css') !!}"    media="all" rel="stylesheet" type="text/css" />
     <link href="{!! asset('css/custom.css') !!}"   media="all" rel="stylesheet" type="text/css" />
     <link href="{!! asset('css/blue.css') !!}"  media="all" rel="stylesheet" type="text/css" />
+
+    <!-- JQUERY -->
+    <script type="text/javascript" src="{!! asset('plugins/jquery.min.js') !!}"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -43,7 +46,6 @@
     @include('content.login-modal')
 
     <!-- JAVASCRIPTS -->
-    <script type="text/javascript" src="{!! asset('plugins/jquery.min.js') !!}"></script>
     <script type="text/javascript" src="{!! asset('plugins/jquery-ui/jquery-ui.js') !!}"></script>
     <script type="text/javascript" src="{!! asset('plugins/bootstrap/js/bootstrap.min.js') !!}"></script>
     <script type="text/javascript" src="{!! asset('plugins/rs-plugin/js/jquery.themepunch.tools.min.js') !!}"></script>

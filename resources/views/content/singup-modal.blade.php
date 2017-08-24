@@ -9,7 +9,7 @@
         <form method="POST" action="{{ route('register') }}">
           {{ csrf_field() }}
           <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-            <input id="name" type="text" class="form-control bg-ash" name="name" value="{{ old('name') }}" placeholder="Nombre(s)" required autofocus>
+            <input id="name" type="text" class="form-control bg-ash" name="name" value="{{ old('name') }}" placeholder="Nombre(s) *"  autofocus>
             @if ($errors->has('name'))
               <span class="help-block">
                 <strong>{{ $errors->first('name') }}</strong>
@@ -17,7 +17,7 @@
             @endif
           </div>
           <div class="form-group{{ $errors->has('last_name') ? ' has-error' : '' }}">
-            <input id="last_name" type="text" class="form-control bg-ash" name="last_name" value="{{ old('last_name') }}" placeholder="Apellidos" required autofocus>
+            <input id="last_name" type="text" class="form-control bg-ash" name="last_name" value="{{ old('last_name') }}" placeholder="Apellidos">
             @if ($errors->has('name'))
               <span class="help-block">
                 <strong>{{ $errors->first('last_name') }}</strong>
@@ -25,7 +25,7 @@
             @endif
           </div>
           <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-            <input id="email" type="email" class="form-control bg-ash" name="email" value="{{ old('email') }}" placeholder="Email" required>
+            <input id="email" type="text" class="form-control bg-ash" name="email" value="{{ old('email') }}" placeholder="Email *" >
             @if ($errors->has('email'))
               <span class="help-block">
                 <strong>{{ $errors->first('email') }}</strong>
@@ -33,7 +33,7 @@
             @endif
           </div>
           <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-            <input id="password" type="password" class="form-control bg-ash" name="password" placeholder="Contraseña" required>
+            <input id="password" type="password" class="form-control bg-ash" name="password" placeholder="Contraseña *" >
             @if ($errors->has('password'))
               <span class="help-block">
                 <strong>{{ $errors->first('password') }}</strong>
@@ -41,7 +41,7 @@
             @endif
           </div>
            <div class="form-group">
-            <input id="password-confirm" type="password" class="form-control bg-ash" name="password_confirmation" placeholder="Confirmar contraseña" required>
+            <input id="password-confirm" type="password" class="form-control bg-ash" name="password_confirmation" placeholder="Confirmar contraseña *" required>
           </div>
           <div class="checkbox">
             <label>
@@ -58,3 +58,12 @@
     </div>
   </div>
 </div>
+
+@if ( $errors && session()->get('singup') )
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('#singUp').trigger('click');
+  });
+  </script>
+  {{ session()->forget('singup') }}
+@endif

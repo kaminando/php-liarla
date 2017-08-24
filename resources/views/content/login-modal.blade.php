@@ -9,7 +9,7 @@
         <form method="POST" action="{{ route('login') }}">
           {{ csrf_field() }}
           <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-            <input id="email" type="email" class="form-control bg-ash" name="email" value="{{ old('email') }}" placeholder="Email" required autofocus>
+            <input id="email" type="email" class="form-control bg-ash" name="email" value="{{ old('email') }}" placeholder="Email" autofocus>
             @if ($errors->has('email'))
               <span class="help-block">
                 <strong>{{ $errors->first('email') }}</strong>
@@ -17,7 +17,7 @@
             @endif
           </div>
           <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-            <input id="password" type="password" class="form-control bg-ash" name="password" placeholder="Contraseña" required>
+            <input id="password" type="password" class="form-control bg-ash" name="password" placeholder="Contraseña">
             @if ($errors->has('password'))
               <span class="help-block">
                 <strong>{{ $errors->first('password') }}</strong>

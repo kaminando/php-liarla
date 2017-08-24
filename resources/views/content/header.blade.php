@@ -50,10 +50,10 @@
 
           @if (Auth::guest())
             <li class="dropdown singleDrop ">
-              <a href="" data-toggle="modal" data-target="#signup"><i class="fa fa-user" aria-hidden="true"></i> CREA TU CUENTA</a>
+              <a id="singUp" href="" data-toggle="modal" data-target="#signup"><i class="fa fa-user" aria-hidden="true"></i> CREA TU CUENTA</a>
             </li>
             <li class="dropdown singleDrop ">
-              <a href="" data-toggle="modal" data-target="#login"><i class="fa fa-check" aria-hidden="true"></i> INICIA SESIÓN</a>
+              <a id="singIn" href="" data-toggle="modal" data-target="#login"><i class="fa fa-check" aria-hidden="true"></i> INICIA SESIÓN</a>
             </li>
           @endif
           <li class="dropdown singleDrop ">
