@@ -57,8 +57,16 @@ Route::group(['middleware' => ['auth']], function () {
   Route::get('dashboard', function () {
       return view('content/dashboard');
   });
+
   Route::get('profile', function () {
       return view('content/profile');
   });
+  Route::get('update-profile', function () {
+      return view('content/update-profile');
+  });
+  Route::post('update-profile', function () {
+      return view('content/update-profile');
+  });
+  Route::post('update-profile', 'UserController@update');
   
 });

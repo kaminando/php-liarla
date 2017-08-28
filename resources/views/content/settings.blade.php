@@ -53,25 +53,6 @@
             </div>
             <hr>
 
-            <!-- Change Password -->
-            <div class="changeEmail">
-              <p>Cambia Tu Email</p>
-              <div class="row">
-                <form action="" method="post">
-                  <div class="col-sm-12">
-                    <input type="text" class="form-control" id="inputPassword3" placeholder="Email anterior">
-                  </div>
-                  <div class="col-sm-12">
-                    <input type="text" class="form-control" id="inputPassword3" placeholder="Nuevo Email">
-                  </div>
-                  <div class="col-sm-12">
-                    <button type="submit" class="btn buttonTransparent">Actualizar Email</button>
-                  </div>
-                </form>
-              </div>
-            </div>
-            <hr>
-
             <!-- Change Setting  -->
             <div class="changeSetting">
               <p>Configuración de Newsletter</p>

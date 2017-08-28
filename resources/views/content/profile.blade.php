@@ -32,15 +32,17 @@
           <div class="profileImg">
             @if (Auth::user()->social_user)
               <img class="img-responsive" src="<?= str_replace('type=normal', 'type=large', Auth::user()->photo) ?>" alt="Foto de perfil.">
-            @else
-              <img class="img-responsive" src="images/profile/profile.jpg" alt="">
+              @elseif ( Auth::user()->photo )
+                <img class="img-responsive" src="{{ Auth::user()->photo }}" alt="">
+              @else
+                <img class="img-responsive" src="images/profile/profile-holder.png" alt="">
             @endif
           </div>
         </div>
         <div class="col-xs-12 col-sm-8">
           <div class="profileContent">
             <div class="editIconRight clearfix">
-              <a href="setting.html"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+              <a href="update-profile"><i class="fa fa-pencil" aria-hidden="true"></i></a>
             </div>
             <div class="profileTitle">
               <h2>{{ Auth::user()->name }} {{ Auth::user()->last_name }}</h2>

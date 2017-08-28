@@ -1,8 +1,10 @@
 jQuery(document).ready(function(){
    'use strict';
 
-  if (window.location.hash == "#_=_")
-  window.location.hash = "";
+  if (window.location.hash == "#_=_") {
+    window.location.hash = "";
+  }
+   
 
   $('.presupuesto-mbl').addClass('search-mbl-fx');
   $('.presupuesto-desk').addClass('search-desk-fx');
@@ -12,7 +14,13 @@ jQuery(document).ready(function(){
     interval: 5000,
   });
 
-//============================== CLOSE DROPDOWN SELECT =========================
+  //============================ SHOW UPDATE PROFILE FORM
+  $('#toggleUpdateprof').click(function(){
+    $('#profileInfo').addClass('hide');
+    $('#updateProfile').removeClass('hide');
+  });
+
+  //============================== CLOSE DROPDOWN SELECT =========================
   $('.ed-datepicker input.form-control').focus(function() {
     $('.sbOptions').css('display', 'none');
   });
@@ -25,7 +33,7 @@ jQuery(document).ready(function(){
   todayHighlight: true
   });
 
-//============================== ALL DROPDOWN ON HOVER =========================
+  //============================== ALL DROPDOWN ON HOVER =========================
   $('.dropdown').hover(function() {
     $(this).addClass('open');
   },
@@ -33,7 +41,7 @@ jQuery(document).ready(function(){
     $(this).removeClass('open');
   });
 
-//============================== Rs-Slider =========================
+  //============================== Rs-Slider =========================
   jQuery('.fullscreenbanner').revolution({
    delay: 5000,
    startwidth: 1170,
@@ -47,7 +55,7 @@ jQuery(document).ready(function(){
    hideTimerBar:'on'
   });
 
-//============================== CHANGE HEADER ON MOUSE SCROLL =========================
+  //============================== CHANGE HEADER ON MOUSE SCROLL =========================
   var header = $('.changeHeader .navbar-fixed-top');
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
@@ -66,16 +74,16 @@ jQuery(document).ready(function(){
 
   });
 
-//============================== SELECT BOX =========================
+  //============================== SELECT BOX =========================
   $('.select-drop').selectbox();
 
-//============================== Date-picker =========================
+  //============================== Date-picker =========================
   $('.datepicker').datepicker({
     startDate: 'dateToday',
     autoclose: true
   });
 
-//============================== COUNTER-UP =========================
+  //============================== COUNTER-UP =========================
   $(document).ready(function ($) {
     $('.counter').counterUp({
       delay: 10,
@@ -83,7 +91,7 @@ jQuery(document).ready(function(){
     });
   });
 
-//============================== PRICE SLIDER RANGER =========================
+  //============================== PRICE SLIDER RANGER =========================
   jQuery(document).ready(function() {
     var minimum = 20;
     var maximum = 300;
@@ -103,7 +111,7 @@ jQuery(document).ready(function(){
     $( '#price-amount-2' ).val( '$' + $( '#price-range' ).slider( 'values', 1 ));
   });
 
-//============================== ACCORDION OR COLLAPSE ICON CHANGE =========================
+  //============================== ACCORDION OR COLLAPSE ICON CHANGE =========================
 
   var allIcons = $('.singlePackage .panel-heading i.fa');
   $('.singlePackage .panel-heading').click(function(){
@@ -135,7 +143,7 @@ jQuery(document).ready(function(){
     $(this).find('i.fa').removeClass('fa-chevron-circle-down').addClass('fa-chevron-circle-up');
   });
 
-//============================== SELECT OPEN ACCORDION ITEM TITLE =========================
+  //============================== SELECT OPEN ACCORDION ITEM TITLE =========================
   $(document).ready(function() {
     $('.accordionWrappar .panel-collapse, .accordionSolidTitle .panel-collapse, .accordionSolidBar .panel-collapse').on('show.bs.collapse', function () {
       $(this).siblings('.panel-heading').addClass('active');
@@ -148,7 +156,7 @@ jQuery(document).ready(function(){
     });
   });
 
-//============================== COUNT DOWN =========================
+  //============================== COUNT DOWN =========================
   $('#simple_timer').syotimer({
     year: 2017,
     month: 5,
