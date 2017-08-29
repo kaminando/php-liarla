@@ -448,13 +448,13 @@
 	}
 }
 .text-search .form-control{
-	height: $base*9;
+	height: 44px;
 	background: transparent;
 	border: none;
 	font-size: 45px;
 	font-weight: 400;
 	color: $white-color;
-	padding: $base-xs*2 $base-xs*6 $base-xs*6 0;
+	padding: $base-xs*2 $base-xs*6 8px 0;
 	box-shadow: none !important;
 }
 

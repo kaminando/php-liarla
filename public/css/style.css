@@ -588,13 +588,13 @@ a {
     margin-bottom: 20px; }
 
 .text-search .form-control {
-  height: 45px;
+  height: 44px;
   background: transparent;
   border: none;
   font-size: 45px;
   font-weight: 400;
   color: #ffffff;
-  padding: 4px 12px 12px 0;
+  padding: 4px 12px 8px 0;
   box-shadow: none !important; }
 
 .text-search.filterDate .form-control {
@@ -6658,5 +6658,37 @@ li.logout {
   transition: 0.7s;
   -webkit-transition-delay: 0.7s;
   transition-delay: 0.7s; }
+
+.profileImg {
+  text-align: right; }
+  .profileImg img {
+    display: inline; }
+  @media screen and (max-width: 768px) {
+    .profileImg {
+      text-align: left; } }
+
+.updateProfileImg img {
+  max-height: 280px;
+  display: inline; }
+
+.personla-desc-upd {
+  background-color: #ffffff !important;
+  color: #555555 !important;
+  font-size: 14px !important; }
+
+.personla-desc-upd::-webkit-input-placeholder {
+  font-size: 14px; }
+
+.personla-desc-upd::-moz-placeholder {
+  font-size: 14px; }
+
+.personla-desc-upd:-ms-input-placeholder {
+  font-size: 14px; }
+
+.personla-desc-upd:-moz-placeholder {
+  font-size: 14px; }
+
+.fix-width-100 .settingContent .form-control {
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
