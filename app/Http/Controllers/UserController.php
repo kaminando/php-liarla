@@ -35,19 +35,37 @@ class UserController extends Controller
     	$profession = $request->input('profession');
     	$self_description = $request->input('self_description');
        	
-       	// UPDATE
-    	DB::table('users')
-            ->where('id', $userId )
-            ->update([
-            	'name' => $name,
-            	'last_name' => $last_name,
-            	'country' => $country,
-            	'zip_code' => $zip_code,
-            	'address' => $address,
-            	'telephone' => $telephone,
-            	'profession' => $profession,
-            	'self_description' => $self_description
-            ]);
+        if( Auth::user()->social_user ) {
+            // FACEBOOK UPDATE
+            DB::table('users')
+                ->where('id', $userId )
+                ->update([
+                    'country' => $country,
+                    'zip_code' => $zip_code,
+                    'address' => $address,
+                    'telephone' => $telephone,
+                    'profession' => $profession,
+                    'self_description' => $self_description
+                ]);
+        }
+        else {
+            // NORMAL UPDATE
+            DB::table('users')
+                ->where('id', $userId )
+                ->update([
+                    'name' => $name,
+                    'last_name' => $last_name,
+                    'country' => $country,
+                    'zip_code' => $zip_code,
+                    'address' => $address,
+                    'telephone' => $telephone,
+                    'profession' => $profession,
+                    'self_description' => $self_description
+                ]);
+        }
+       	
+
+        
 
         return redirect('profile');
 

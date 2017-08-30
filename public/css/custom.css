@@ -317,4 +317,7 @@ li.logout {
 .fix-width-100 .settingContent .form-control {
   width: 100%; }
 
+.searchTour.desk .sbHolder {
+  margin-top: 13px; }
+
 /*# sourceMappingURL=custom.css.map */

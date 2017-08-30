@@ -107,7 +107,7 @@
                 </div>
               </div>
               <div class="col-xs-4">
-                <div class="searchTour">
+                <div class="searchTour desk">
                   <select name="guiest_id2" id="guiest_id2" class="select-drop">
                     <option selected disabled value="-1">Personas</option>
                     <option value="1">1</option>

@@ -588,14 +588,15 @@ a {
     margin-bottom: 20px; }
 
 .text-search .form-control {
-  height: 44px;
+  height: 45px;
   background: transparent;
   border: none;
   font-size: 45px;
   font-weight: 400;
   color: #ffffff;
-  padding: 4px 12px 8px 0;
-  box-shadow: none !important; }
+  padding: 4px 12px 4px 0;
+  box-shadow: none !important;
+  box-sizing: initial; }
 
 .text-search.filterDate .form-control {
   color: #969696; }
@@ -6690,5 +6691,8 @@ li.logout {
 
 .fix-width-100 .settingContent .form-control {
   width: 100%; }
+
+.searchTour.desk .sbHolder {
+  margin-top: 13px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -48,7 +48,7 @@
                 <p>Nombre*</p>
                 <div class="row">
                     <div class="col-sm-12{{ $errors->has('name') ? ' has-error' : '' }}">
-                      <input name="name" value="{{ Auth::user()->name }}" type="text" class="form-control" id="inputPassword3" placeholder="Nombre(s)">
+                      <input name="name" value="{{ Auth::user()->name }}" type="text" class="form-control" <?= Auth::user()->social_user ? 'disabled' : '' ?>  id="inputPassword3" placeholder="Nombre(s)">
                       @if ($errors->has('name'))
                         <span class="help-block">
                           <strong>{{ $errors->first('name') }}</strong>
@@ -56,7 +56,7 @@
                       @endif
                     </div>
                     <div class="col-sm-12">
-                      <input name="last_name" value="{{ Auth::user()->last_name }}" type="text" class="form-control" id="inputPassword3" placeholder="Apellidos">
+                      <input name="last_name" value="{{ Auth::user()->last_name }}" type="text" class="form-control" <?= Auth::user()->social_user ? 'disabled' : '' ?> id="inputPassword3" placeholder="Apellidos">
                     </div>
                 </div>
               </div>
