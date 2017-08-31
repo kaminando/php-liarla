@@ -34,6 +34,7 @@ class UserController extends Controller
     	$telephone = $request->input('telephone');
     	$profession = $request->input('profession');
     	$self_description = $request->input('self_description');
+        $photo = $request->input('photo');
        	
         if( Auth::user()->social_user ) {
             // FACEBOOK UPDATE
@@ -50,6 +51,20 @@ class UserController extends Controller
         }
         else {
             // NORMAL UPDATE
+
+            if ($request->hasFile('photo')) {
+                $image = $request->file('photo');
+                $photoName = 'profile_img_'.time().'.'.$image->getClientOriginalExtension();
+                $destinationPath = public_path('/images/profile');
+                $image->move($destinationPath, $photoName);
+            }
+            else {
+                if( !Auth::user()->photo ) {
+                    $photoName = NULL;
+                }
+            }
+            
+
             DB::table('users')
                 ->where('id', $userId )
                 ->update([
@@ -60,7 +75,8 @@ class UserController extends Controller
                     'address' => $address,
                     'telephone' => $telephone,
                     'profession' => $profession,
-                    'self_description' => $self_description
+                    'self_description' => $self_description,
+                    'photo' => $photoName
                 ]);
         }
        	

@@ -33,7 +33,7 @@
             @if (Auth::user()->social_user)
               <img class="img-responsive" src="<?= str_replace('type=normal', 'type=large', Auth::user()->photo) ?>" alt="Foto de perfil.">
               @elseif ( Auth::user()->photo )
-                <img class="img-responsive" src="{{ Auth::user()->photo }}" alt="">
+                <img class="img-responsive" src="images/profile/{{ Auth::user()->photo }}" alt="">
               @else
                 <img class="img-responsive" src="images/profile/profile-holder.png" alt="">
             @endif
