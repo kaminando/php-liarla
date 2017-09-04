@@ -17,9 +17,11 @@ class UserController extends Controller
     {
     	$validator = Validator::make($request->all(), [
 			'name' => 'required',
+            'photo' => 'max:5120'
         ]);
 
         if ($validator->fails()) {
+            var_dump('wntra');
          	return redirect('update-profile')
 	            ->withErrors($validator)
 	            ->withInput();
@@ -34,7 +36,6 @@ class UserController extends Controller
     	$telephone = $request->input('telephone');
     	$profession = $request->input('profession');
     	$self_description = $request->input('self_description');
-        $photo = $request->input('photo');
        	
         if( Auth::user()->social_user ) {
             // FACEBOOK UPDATE
@@ -61,6 +62,9 @@ class UserController extends Controller
             else {
                 if( !Auth::user()->photo ) {
                     $photoName = NULL;
+                }
+                else {
+                    $photoName =  Auth::user()->photo;
                 }
             }
             
