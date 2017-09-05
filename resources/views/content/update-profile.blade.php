@@ -38,6 +38,7 @@
                 @else
                   <img class="img-responsive" src="images/profile/profile-holder.png" alt="">
               @endif
+              <br><br>
               <input name="photo" type="file" />
             </div>
 

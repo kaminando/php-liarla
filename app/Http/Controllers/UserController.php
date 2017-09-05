@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Auth;
 use DB;
+use File;
 
 class UserController extends Controller
 {
@@ -15,17 +16,7 @@ class UserController extends Controller
      */
     public function update(Request $request)
     {
-    	$validator = Validator::make($request->all(), [
-			'name' => 'required',
-            'photo' => 'max:5120'
-        ]);
-
-        if ($validator->fails()) {
-            var_dump('wntra');
-         	return redirect('update-profile')
-	            ->withErrors($validator)
-	            ->withInput();
-        }
+    	
 
         $userId = Auth::user()->id;
     	$name = $request->input('name');
@@ -38,6 +29,7 @@ class UserController extends Controller
     	$self_description = $request->input('self_description');
        	
         if( Auth::user()->social_user ) {
+
             // FACEBOOK UPDATE
             DB::table('users')
                 ->where('id', $userId )
@@ -53,11 +45,24 @@ class UserController extends Controller
         else {
             // NORMAL UPDATE
 
+            $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'photo' => 'max:5120'
+            ]);
+
+            if ($validator->fails()) {
+                return redirect('update-profile')
+                    ->withErrors($validator)
+                    ->withInput();
+            }
+
             if ($request->hasFile('photo')) {
                 $image = $request->file('photo');
                 $photoName = 'profile_img_'.time().'.'.$image->getClientOriginalExtension();
                 $destinationPath = public_path('/images/profile');
                 $image->move($destinationPath, $photoName);
+                // se elimina imagen anterior
+                File::delete('images/profile/'. Auth::user()->photo);
             }
             else {
                 if( !Auth::user()->photo ) {
