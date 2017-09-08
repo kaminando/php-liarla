@@ -4,6 +4,13 @@ jQuery(document).ready(function(){
   if (window.location.hash == "#_=_") {
     window.location.hash = "";
   }
+
+  //============================ BOTONES SELECTORES EN EL BUSCADOR DEL HOME ======
+  $('.type-selector').click(function(){
+    $('.type-selector').removeClass('active');
+    $(this).addClass('active');
+  });
+  
    
 
   $('.presupuesto-mbl').addClass('search-mbl-fx');
@@ -14,7 +21,7 @@ jQuery(document).ready(function(){
     interval: 5000,
   });
 
-  //============================ SHOW UPDATE PROFILE FORM
+  //============================ SHOW UPDATE PROFILE FORM ========================
   $('#toggleUpdateprof').click(function(){
     $('#profileInfo').addClass('hide');
     $('#updateProfile').removeClass('hide');

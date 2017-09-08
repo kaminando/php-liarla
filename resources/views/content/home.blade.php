@@ -11,81 +11,30 @@
     <div class="fullscreenbanner-container">
       <div class="fullscreenbanner">
         <ul>
-          <li data-transition="parallaxhorizontal" data-slotamount="5" data-masterspeed="700" data-title="Slide 1">
-            <img src="img/home/slider/long-weekend-ideas-plans.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
-            <div class="slider-caption container">
-              <div class="tp-caption rs-caption-1 sft start"
-                data-hoffset="0"
-                data-y="270"
-                data-speed="800"
-                data-start="1000"
-                data-easing="Back.easeInOut"
-                data-endspeed="300">
-                Ve hasta donde
-                <span>otros han ido</span>
-              </div>
-              <div class="tp-caption rs-caption-2 sft"
-                data-hoffset="0"
-                data-y="400"
-                data-speed="1000"
-                data-start="1500"
-                data-easing="Power4.easeOut"
-                data-endspeed="300"
-                data-endeasing="Power1.easeIn"
-                data-captionhidden="off">
-                ¿Qué tan lejos sabes que puedes llegar?
-              </div>
-              <div class="tp-caption rs-caption-3 sft"
-                data-hoffset="0"
-                data-y="485"
-                data-speed="800"
-                data-start="2000"
-                data-easing="Power4.easeOut"
-                data-endspeed="300"
-                data-endeasing="Power1.easeIn"
-                data-captionhidden="off">
-              </div>
-            </div>
+
+          <li data-transition="parallaxhorizontal" data-slotamount="8" data-masterspeed="700" data-title="Slide 1">
+            <img src="images/home_slider/1.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
           </li>
-          <li data-transition="parallaxvertical" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
-            <img src="img/home/slider/india.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
-            <div class="slider-caption container">
-              <div class="tp-caption rs-caption-1 sft start text-center"
-                data-hoffset="0"
-                data-x="center"
-                data-y="270"
-                data-speed="800"
-                data-start="1000"
-                data-easing="Back.easeInOut"
-                data-endspeed="300">
-                Lo que hacemos, porqué lo hacemos,
-                <span>dónde, por tí!</span>
-              </div>
-              <div class="tp-caption rs-caption-2 sft text-center"
-                data-hoffset="0"
-                data-x="center"
-                data-y="400"
-                data-speed="1000"
-                data-start="1500"
-                data-easing="Power4.easeOut"
-                data-endspeed="300"
-                data-endeasing="Power1.easeIn"
-                data-captionhidden="off">
-                "Te descubrimos el mundo..."
-              </div>
-              <div class="tp-caption rs-caption-3 sft text-center"
-                data-hoffset="0"
-                data-x="center"
-                data-y="485"
-                data-speed="800"
-                data-start="2000"
-                data-easing="Power4.easeOut"
-                data-endspeed="300"
-                data-endeasing="Power1.easeIn"
-                data-captionhidden="off">
-              </div>
-            </div>
+          <li data-transition="parallaxvertical" data-slotamount="8" data-masterspeed="700" data-title="Slide 1">
+            <img src="images/home_slider/2.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
           </li>
+          <li data-transition="parallaxhorizontal" data-slotamount="8" data-masterspeed="700" data-title="Slide 1">
+            <img src="images/home_slider/3.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+          </li>
+          <li data-transition="parallaxvertical" data-slotamount="8" data-masterspeed="700" data-title="Slide 1">
+            <img src="images/home_slider/4.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+          </li>
+          <li data-transition="parallaxhorizontal" data-slotamount="8" data-masterspeed="700" data-title="Slide 1">
+            <img src="images/home_slider/5.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+          </li>
+          <li data-transition="parallaxvertical" data-slotamount="8" data-masterspeed="700" data-title="Slide 1">
+            <img src="images/home_slider/6.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+          </li>
+          <li data-transition="parallaxhorizontal" data-slotamount="8" data-masterspeed="700" data-title="Slide 1">
+            <img src="images/home_slider/7.jpg" alt="slidebg1" data-bgfit="cover" data-bgposition="center center" data-bgrepeat="no-repeat">
+          </li>
+
+          
         </ul>
       </div>
     </div>
@@ -93,23 +42,48 @@
     <section class="darkSection desk-search-bar no-xs">
       <div class="container">
         <div class="row gridResize">
-          <div class="col-xs-3 col-xs-12 desk-search-legend">
-            <div class="sectionTitleDouble">
-              <p>Busca</p>
-              <h2>tus <span>destinos</span></h2>
+          <div class="col-xs-12">
+            <div class="row">
+            <p class="center">
+              <button type="button" class="btn btn-primary type-selector">
+                <i class="fa fa-plane" aria-hidden="true"></i>
+                <br>
+                Vuelos
+              </button>&nbsp;&nbsp;
+              <button type="button" class="btn btn-primary type-selector">
+                <i class="fa fa-building-o" aria-hidden="true"></i>
+                <br>
+                Hoteles
+              </button>&nbsp;&nbsp;
+              <button type="button" class="btn btn-primary type-selector">
+                <i class="fa fa-plane" aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;<i class="fa fa-building-o" aria-hidden="true"></i>
+                <br>
+                Vuelo y hotel
+              </button>
+            </p>
             </div>
-          </div>
-          <div class="col-xs-9 col-xs-offset-3">
             <div class="row">
               <div class="col-xs-8">
                 <div class="input-group date text-search presupuesto-desk" >
                   <input type="text" class="form-control currency" placeholder="Presupuesto">
                 </div>
               </div>
-              <div class="col-xs-4">
+              <div class="col-xs-2">
                 <div class="searchTour desk">
                   <select name="guiest_id2" id="guiest_id2" class="select-drop">
-                    <option selected disabled value="-1">Personas</option>
+                    <option selected disabled value="-1">Adultos</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">Más de 4</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-xs-2">
+                <div class="searchTour desk">
+                  <select name="guiest_id2" id="guiest_id2" class="select-drop">
+                    <option selected disabled value="-1">Niños</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -123,7 +97,7 @@
         </div>
         <div class="row gridResize">
           <br><br>
-          <div class="col-xs-9 col-xs-offset-3">
+          <div class="col-xs-12">
             <div class="row">
               <div class="col-xs-4">
                 <div class="input-group date ed-datepicker" data-provide="datepicker">
@@ -143,9 +117,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-sm-4">
+              <div class="col-xs-4">
                 <label>&nbsp;</label>
-                <a href="search-results" class="btn btn-block buttonCustomPrimary">Buscar</a>
+                <a href="search-results" class="btn btn-block buttonCustomPrimary">BUSCAR</a>
               </div>
             </div>
           </div>
@@ -211,31 +185,43 @@
 
   <section class="mainContentSection packagesSection">
     <div class="container">
-      <div class="jumbotron home-jumbotron">
+      <div class="jumbotron home-jumbotron como-funciona">
         <h3 class="section-header center">Cómo funciona</h3>
-        <p class="section-header center">Descubre como podemos ayudarte a encontrar lo que no sabes que deseas!.</p>
-        <br>
         <div class="row">
-          <div class="col-md-4 inf">
+          <div class="col-md-4 inf presupuesto">
             <div>
-              <br>
-              <h4>Ingresa tu presupuesto</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet diam nec mi dictum, gravida venenatis eros consequat. Maecenas est enim, ultrices et lacus a, semper dictum orci. Morbi malesuada est eu nisi varius, sit amet pulvinar leo eleifend.</p>
+              <div class="img">
+                <div><i class="fa fa-credit-card" aria-hidden="true"></i></div>
+              </div>
+              <h4>Ingresa tu <span>presupuesto</span></h4>
+              <p>
+                ¿Cuánto dinero tienes?
+              </p>
             </div>
             
           </div>
-          <div class="col-md-4 inf">
+          <div class="col-md-4 inf explora">
             <div>
-              <br>
-              <h4>Explora destinos</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet diam nec mi dictum, gravida venenatis eros consequat. Maecenas est enim, ultrices et lacus a, semper dictum orci. Morbi malesuada est eu nisi varius, sit amet pulvinar leo eleifend.</p>
+              <div class="img">
+                <div><i class="fa fa-binoculars" aria-hidden="true"></i></div>
+              </div>
+              <h4>Explora <span>destinos</span></h4>
+              <p>
+                Déjanos sorprenderte
+                <br>
+                Explora los excelentes destinos que te ofrecemos (también puedes escoger solo vuelo u hotel).
+              </p>
             </div>
           </div>
-          <div class="col-md-4 inf">
+          <div class="col-md-4 inf encuentra">
             <div>
-              <br>
-              <h4>Encuentra los mejores vuelos</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet diam nec mi dictum, gravida venenatis eros consequat. Maecenas est enim, ultrices et lacus a, semper dictum orci. Morbi malesuada est eu nisi varius, sit amet pulvinar leo eleifend.</p>
+              <div class="img">
+                <div><i class="fa fa-plane" aria-hidden="true"></i></div>
+              </div>
+              <h4><span>Encuentra</span> los mejores vuelos</h4>
+            <p>
+              Vete a descubrir el mundo a lugares a los que no sabías que podías ir con tu presupuesto.
+            </p>
             </div>
           </div>
         </div>

@@ -6458,18 +6458,16 @@ h3.section-header {
     position: absolute;
     z-index: 99;
     width: auto;
-    bottom: 15px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
-    border: 1px solid #cccccc;
-    -webkit-box-shadow: 0px 0px 5px 0px white;
-    -moz-box-shadow: 0px 0px 5px 0px white;
-    box-shadow: 0px 0px 5px 0px white;
+    border: 1px solid transparent;
     padding-top: 20px;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    background-color: rgba(38, 42, 46, 0.7) !important; }
     .home-cover .desk-search-bar label {
       margin-bottom: 0px; }
     .home-cover .desk-search-bar .date-desk-search {
@@ -6484,25 +6482,51 @@ h3.section-header {
     @media screen and (max-width: 992px) {
       .home-cover .desk-search-bar h2 {
         font-size: 25px; } }
+    .home-cover .desk-search-bar button.type-selector {
+      text-transform: none;
+      width: 135px;
+      padding: 6px 12px; }
+      .home-cover .desk-search-bar button.type-selector.active {
+        background-color: #e5b714;
+        border: 1px solid #e5b714; }
 
 .home-jumbotron {
-  background-color: #eaeaea; }
+  padding-bottom: 15px;
+  background-color: #ffffff; }
   .home-jumbotron p {
     font-size: inherit;
-    text-align: center; }
+    text-align: center;
+    color: #515151; }
+  .home-jumbotron h3 {
+    color: #515151; }
   .home-jumbotron h4 {
+    color: #515151;
     font-size: 16px;
     text-transform: none;
     font-weight: 600;
-    text-align: center; }
+    text-align: center;
+    text-transform: uppercase; }
+  .home-jumbotron .presupuesto i, .home-jumbotron .presupuesto h4 span {
+    color: green; }
+  .home-jumbotron .explora i, .home-jumbotron .explora h4 span {
+    color: #ffbd03; }
+  .home-jumbotron .encuentra i, .home-jumbotron .encuentra h4 span {
+    color: #337ab7; }
   .home-jumbotron .inf {
-    margin-top: 20px; }
+    margin-top: 0px; }
     .home-jumbotron .inf div {
-      background-color: #ffffff;
       padding: 15px;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       border-radius: 5px; }
+    .home-jumbotron .inf .img {
+      width: 100%;
+      margin-bottom: 10px; }
+      .home-jumbotron .inf .img div {
+        color: #515151;
+        text-align: center;
+        font-size: 35px;
+        margin: 0 auto; }
 
 @media screen and (max-width: 768px) {
   .liarla-interested .interested-block {
